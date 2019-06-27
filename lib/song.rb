@@ -27,5 +27,8 @@ class Song
     self.all << song
     song
   end
+  
+  def self.find_by_name (name)
+  end
 
 end
