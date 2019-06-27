@@ -43,7 +43,7 @@ class Song
 
   def self.new_from_filename(name)
     song_arr = name.split(/-./)
-    song = self.new_by_name(song_arr[1])
+    song = self.new_by_name(song_arr[1].chomp)
     song.artist_name = song_arr[0].chomp
 
   end
