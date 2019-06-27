@@ -47,4 +47,8 @@ class Song
     song.artist_name = song_arr[0].strip
     song
   end
+
+  def self.create_from_filename(name)
+    self.all << self.new_from_filename(name)
+  end
 end
